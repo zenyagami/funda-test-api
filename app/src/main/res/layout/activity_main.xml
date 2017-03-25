@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context="com.zenkun.fundatest.MainActivity"
+    >
+    <ProgressBar
+        android:id="@+id/pb_loading"
+        android:layout_gravity="center"
+        android:layout_width="42dp"
+        android:layout_height="42dp" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_l"
+    android:layout_height="match_parent"
+    android:id="@+id/root_views"
+    >
+
+    <TextView
+        android:textColor="@android:color/black"
+        android:id="@+id/makelar_label"
+        style="@style/TextAppearance.AppCompat.Caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/makelar_label"
+         />
+
+    <TextView
+        android:textColor="@color/colorPrimary"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:id="@+id/makelar_id"
+        tools:text="makelar ID"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginTop="@dimen/margin_m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         />
+
+    <TextView
+        tools:text="@string/makelar_top_one_amsterdam"
+        android:textColor="@android:color/black"
+        style="@style/TextAppearance.AppCompat.Caption"
+        android:id="@+id/top_ten_caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_l"
+        app:layout_constraintTop_toBottomOf="@+id/makelar_id"
+        app:layout_constraintLeft_toLeftOf="@+id/makelar_id" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_top_ten"
+        android:layout_marginTop="@dimen/margin_l"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_ten_caption"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         />
+</LinearLayout>
+</FrameLayout>

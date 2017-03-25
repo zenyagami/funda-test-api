@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">FundaTest</string>
+    <string name="makelar_label">Top Makelaar in %s</string>
+    <string name="makelar_top_ten_amsterdam">Top ten in Amsterdam</string>
+    <string name="makelar_top_ten_tuin">Top ten in Tuin</string>
+    <string name="makelar_top_one_amsterdam">Best Makelar in Amstedam:</string>
+    <string name="makelar_top_one_tuin">Best Makelar in Tuin:</string>
+
+    <string name="error_generic">Error loading data from the server</string>
+    <string name="makelar_row_desc" formatted="false">%s - %s has: %d Objects</string>
+    <string name="menu_amsterdam">Amsterdam</string>
+    <string name="menu_tuin">Tuin</string>
+</resources>
